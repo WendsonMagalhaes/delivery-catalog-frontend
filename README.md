@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Delivery Catalog Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicacao React que consome a **API publica de produtos** dos servicos **Ze Delivery** e **iFood**, exibindo um catalogo filtravel com imagens, nomes, categorias e servidor de origem.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📦 Funcionalidades
 
-### `npm start`
+* ✅ Listagem de produtos com imagens
+* 🔎 Filtros por nome, categoria e servidor
+* ⬇️ Ordenacao alfabetica crescente/decrescente
+* 📷 Exibicao de imagens hospedadas externamente
+* 🌐 Consumo de API publica com Axios
+* 💅 Interface responsiva e estilizada
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias utilizadas
 
-### `npm test`
+* [React](https://reactjs.org/)
+* [Axios](https://axios-http.com/)
+* [CSS Modules](https://reactjs.org/docs/faq-styling.html)
+* [Railway](https://railway.app/) (API hospedada)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔧 Instalacao
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone o repositorio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/seu-usuario/delivery-catalog-frontend.git
+cd delivery-catalog-frontend
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Instale as dependencias
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Inicie o servidor local
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+A aplicacao sera iniciada em:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+http://localhost:3000
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌐 API utilizada
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A aplicacao consome os dados da seguinte API publica:
 
-### Code Splitting
+```
+https://delivery-catalog-api-production.up.railway.app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Principais endpoints:
 
-### Analyzing the Bundle Size
+* `/ze-delivery`
+* `/ze-delivery/:id`
+* `/ze-delivery/nome/:nome`
+* `/ze-delivery/categoria/:categoria`
+* `/ifood`
+* `/ifood/:id`
+* `/ifood/nome/:nome`
+* `/ifood/categoria/:categoria`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📄 Acesse a [documentacao Swagger](https://delivery-catalog-api-production.up.railway.app/docs) para mais detalhes.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📁 Estrutura basica de pastas
 
-### Advanced Configuration
+```
+src/
+├── components/
+│   └── ProductCard
+│       ├── ProductCard.jsx
+│       └── ProductCard.css
+├── pages/
+│   ├── Home
+│   │   ├── Home.jsx
+│   │   └── Home.css
+│   └── Product
+│        ├── Product.jsx
+│        └── Product.css
+│
+├── App.js
+└── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📜 Licenca
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Este projeto esta sob a licenca MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🙋‍♂️ Autor
+Desenvolvido por **Wendson Silva**
+
+Entre em contato: [wendson.silva@ccc.ufcg.edu.br](mailto:wendson.silva@ccc.ufcg.edu.br)

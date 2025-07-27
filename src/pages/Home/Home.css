@@ -1,0 +1,77 @@
+.home-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    line-height: 1.6;
+}
+
+.home-container h1 {
+    color: #D02102;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.home-container h2,
+.home-container h3 {
+    color: #D02102;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.code-block {
+    background-color: #f4f4f4;
+    color: #111;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-family: monospace;
+    display: block;
+    margin: 0.5rem 0 1rem;
+}
+
+.endpoint-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.endpoint-list li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.endpoint-list a {
+    font-weight: bold;
+    color: #D02102;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.endpoint-list a:hover {
+    color: #a01801;
+    text-decoration: underline;
+}
+
+.swagger-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #F3B92B;
+    background-color: #D02102;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.swagger-link:hover {
+    background-color: #b01a01;
+    text-decoration: none;
+}
