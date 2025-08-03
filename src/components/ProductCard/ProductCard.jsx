@@ -4,6 +4,8 @@ import './ProductCard.css';
 export default function ProductCard({ product }) {
     return (
         <div className="product-card">
+            <p className="product-id">ID: {product.id}</p> {/* Aqui mostra o ID */}
+
             {product.url_imagem_hospedada && (
                 <img
                     src={product.url_imagem_hospedada}
@@ -15,6 +17,9 @@ export default function ProductCard({ product }) {
             <p className="product-description">{product.descricao || 'Sem descrição'}</p>
             <p className="product-category">
                 Categoria: <span>{product.categoria || '-'}</span>
+            </p>
+            <p className="product-subcategory">
+                Subcategoria: <span>{product.subcategoria || '-'}</span>
             </p>
             <p className="product-servidor">Servidor: {product.servidor}</p>
         </div>

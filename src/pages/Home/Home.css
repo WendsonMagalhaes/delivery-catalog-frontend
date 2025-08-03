@@ -1,18 +1,32 @@
+.home {
+    padding-top: 80px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .home-container {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
     line-height: 1.6;
 }
 
+.home-container p {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .home-container h1 {
     color: #D02102;
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
+
 }
 
 .home-container h2,
@@ -45,6 +59,10 @@
 .endpoint-list li {
     margin-bottom: 0.75rem;
     font-size: 1rem;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .endpoint-list a {
@@ -57,6 +75,12 @@
 .endpoint-list a:hover {
     color: #a01801;
     text-decoration: underline;
+}
+
+.swagger-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swagger-link {
@@ -74,4 +98,11 @@
 .swagger-link:hover {
     background-color: #b01a01;
     text-decoration: none;
+}
+
+.documentation-auxiliary {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 }
