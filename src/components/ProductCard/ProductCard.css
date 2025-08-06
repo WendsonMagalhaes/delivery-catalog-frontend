@@ -34,6 +34,11 @@
     margin-bottom: 8px;
 }
 
+.product-id {
+    color: #D02102;
+    font-weight: 500;
+}
+
 .product-description {
     font-size: 14px;
     color: #555;

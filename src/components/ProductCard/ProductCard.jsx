@@ -4,7 +4,7 @@ import './ProductCard.css';
 export default function ProductCard({ product }) {
     return (
         <div className="product-card">
-            <p className="product-id">ID: {product.id}</p> {/* Aqui mostra o ID */}
+            <h4 className="product-id">ID: {product.id}</h4>
 
             {product.url_imagem_hospedada && (
                 <img
